@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<section type="basic">
+	<title>Contact</title>
+	<folder></folder>
+	<urlname>contact</urlname>
+	<content>
+		<![CDATA[
+			<div>
+				<p>Visit Us at Our Locations:</p>
+				<p>New York, NY</p>
+				<p>San Fransisco, CA</p>
+			</div>
+		]]>
+	</content>
+	<media>
+	</media>
+</section>

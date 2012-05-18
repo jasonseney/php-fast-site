@@ -1,0 +1,21 @@
+emails:
+  contact: "test@example.com"
+links:
+  facebook: "http://www.facebook.com/pages/"
+  twitter: "http://twitter.com/"
+googleAnalyticsId: "********"
+nav: 
+  menu:
+    - name: "aboutus"
+      url: "about-us" 
+      controller: "PageController"
+      action: "detail"
+    - name: "contact"
+      url: "contact" 
+      controller: "PageController"
+      action: "detail"
+  hidden:
+    - name: "home"
+      url: ""
+      controller: "Pagecontroller"
+      action: "landing"

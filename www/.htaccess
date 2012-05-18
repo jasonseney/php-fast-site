@@ -1,0 +1,21 @@
+RewriteEngine On
+
+#with trailing slash
+ReWriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([a-zA-Z]{2})/?$ index.php?lang=$1 [NC,L,QSA]
+RewriteRule ^(?:([a-zA-Z]{2})/)?([a-zA-Z0-9\-]+/)*([a-zA-Z0-9\-\+\']+)(\?[a-zA-Z0-9\-\+\'])*$ index.php?lang=$1&path=$2&page=$3 [NC,L,QSA]
+
+
+#For index
+RewriteRule ^$ index.php [NC,L,QSA]
+
+#For index /
+RewriteRule ^/$ index.php [NC,L,QSA]
+
+AddHandler php5-script .php
+
+# HTML 5 Video File Types
+AddType video/ogg .ogv
+AddType video/mp4 .mp4
+AddType video/webm .webm

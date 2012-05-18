@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<section type="basic">
+	<title>About Us</title>
+	<folder></folder>
+	<urlname>about-us</urlname>
+	<content>
+		<![CDATA[
+		<p>About us text is here.</p>
+		]]>
+	</content>
+	<media>
+	</media>
+</section>

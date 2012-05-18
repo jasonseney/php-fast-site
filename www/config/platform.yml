@@ -1,0 +1,7 @@
+social:
+  - name: "Tumblr"
+    url: 'http://www.tumblr.com/share/link?url={0}&name={1}&description={2}' 
+  - name: "Facebook"
+    url: 'http://www.facebook.com/sharer/sharer.php?u={0}' 
+  - name: "Twitter"
+    url: 'http://www.twitter.com/sharer/sharer.php?u={0}' 

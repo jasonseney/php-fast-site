@@ -1,0 +1,32 @@
+<?php 
+$item = $model->item;
+
+$theVideo = $item["video"];
+$hasVideo = isset($theVideo);
+
+$imgLabel = $item["label"];
+$hasImgLabel = isset($imgLabel);
+?>
+
+<a href="<?php echo ($item["link"]); ?>" title="<?php echo ($item); ?>" class="promo darken<?php echo $hasVideo ? " video": ""?>">
+	<div class="label">
+		<?php if($hasImgLabel) { ?>
+		<img alt="<?php echo ($item); ?>" src="<?php echo $item["label"]; ?>" />
+		<?php } else { ?>
+			<?php echo ($item); ?>
+		<?php } ?>
+	</div>
+	<?php if($hasVideo) { ?>
+		<video preload="auto"
+			poster="<?php echo getImage($model->width,$model->height, $item["image"]) ?>"
+			loop="loop"
+		>
+			<!-- Testing -->
+			<source src="<?php echo $theVideo ?>.m4v"  type="video/mp4" />
+			<source src="<?php echo $theVideo ?>_mobile.mp4"  type="video/mp4" />
+			<source src="<?php echo $theVideo ?>_5439.ogg"  type="video/ogg" />
+		</video>
+	<?php } else { ?>
+		<img src="<?php echo getImage($model->width,$model->height, $item["image"]); ?>" alt="<?php echo ($item); ?>" />
+	<?php } ?>
+</a>
