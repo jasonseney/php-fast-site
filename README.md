@@ -3,7 +3,7 @@ phasite - PHP Fast Site
 
 A basic PHP boot strap framework for building small and simple websites.
 
-Features include:
+### Features include:
 
 - Global `YML` configurations
 - PHP _only_ templating system
@@ -19,15 +19,17 @@ Features include:
   - All labels (strings) in language specific configuration
 - Basic XML repository for page data
 
-What **phasite** is NOT:
+### What **phasite** is NOT:
 
 - Not a CMS
 - Does not currently support MVC style routing
 - Does not have IoC components that are easily swappable
+- Does not easily support "plugins", it is meant to be hacked and customized for each application
 
-Who its for:
+### Who its for:
 
 - Looking to quicklky build a small, custom website 
 - Do not want to be limited to a CMS platform
-- Do not want to learn or setup larger frameworks (Symfony, CakePHP etc
+- Do not want to learn or setup larger frameworks (Symfony, CakePHP etc)
+- Need to build multiple custom features for parts of the site
 - Template developer doesn't need to know about underlying system or learn a new template language.
