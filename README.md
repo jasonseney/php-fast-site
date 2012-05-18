@@ -8,7 +8,7 @@ A basic PHP boot strap framework for building small and simple websites.
 - Global `YML` configurations
 - PHP _only_ templating system
   - Includes Master Pages, Templates, Partials
-  - Supports "block" rendering
+  - Supports "block" rendering (similar to Smarty, Twig, ASP.NET)
   - A single `model` variable is passed to each template
 - Support for multiple controllers and actions
   - Base `Controller` class is extendable for custom controllers
