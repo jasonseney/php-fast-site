@@ -1,4 +1,4 @@
-phasite - PHP Fast Site
+PHP Fast Site
 =======================
 
 A basic PHP boot strap framework for building small and simple websites.
